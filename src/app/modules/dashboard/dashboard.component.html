@@ -1,0 +1,39 @@
+<div>
+   <app-widget-area [data]="bigChart"></app-widget-area>
+</div>
+
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+          
+                     <h1> Regiões </h1>
+    <mat-card fxFlex="20">
+        <app-widgets-cards label="Sul" total="26M" percentage="26" [data]="cards"></app-widgets-cards>
+    </mat-card>
+    <mat-card fxFlex="20">
+        <app-widgets-cards label="Sudeste" total="27M" percentage="27" [data]="cards"></app-widgets-cards>
+    </mat-card>
+    <mat-card fxFlex="20">
+        <app-widgets-cards label="Centro-Oeste" total="17M" percentage="17" [data]="cards"></app-widgets-cards>
+    </mat-card>
+    <mat-card fxFlex="20">
+        <app-widgets-cards label="Norte" total="13M" percentage="13" [data]="cards"></app-widgets-cards>
+    </mat-card>
+    <mat-card fxFlex="20">
+        <app-widgets-cards label="Nordeste" total="17M" percentage="17" [data]="cards"></app-widgets-cards>
+    </mat-card>
+
+</div>
+
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div>
+    <div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px" >
+        <div fxFlex="120"> 
+            <app-widget-table [data]="tableData"></app-widget-table>
+        </div> 
+</div>

@@ -1,0 +1,35 @@
+<div class="mat-elevation-z8">
+    <mat-form-field>
+        <mat-label>Pesquisar</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+      </mat-form-field>
+    <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+  
+      <ng-container matColumnDef="position" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Ranking </mat-header-cell>>
+        <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>>
+      </ng-container>
+  
+      <ng-container matColumnDef="name" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Cidade </mat-header-cell>>
+        <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>>
+      </ng-container>
+  
+      <ng-container matColumnDef="population" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header> População </mat-header-cell>>
+        <mat-cell *matCellDef="let element"> {{element.population}} </mat-cell>>
+      </ng-container>
+  
+      <ng-container matColumnDef="estado" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Estado </mat-header-cell>>
+        <mat-cell *matCellDef="let element"> {{element.estado}} </mat-cell>>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>>
+    </mat-table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+  </div>
+
+  
