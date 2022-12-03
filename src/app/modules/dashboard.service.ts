@@ -6,7 +6,10 @@ import { Injectable } from '@angular/core';
 export class DashboardService {
 
   items: any;
+
+  
   constructor() { }
+  
   bigChart(){
     return [{
       name: 'Salvador',
@@ -54,7 +57,13 @@ export class DashboardService {
       this.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
     }
 
-
+  
+    graficChart(){
+      return[{
+        data: [10, 20, 30]
+      }]
+     
+    }
 
 
   

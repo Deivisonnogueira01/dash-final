@@ -1,7 +1,7 @@
 <div>
     <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
-    <!--GRAFICO-->
+<!--GRAFICO-->
 
 <br>
 <mat-divider></mat-divider>
@@ -26,7 +26,7 @@
     <mat-card fxFlex="20">
         <app-widgets-cards label="Nordeste" total="17M" percentage="17" [data]="cards"></app-widgets-cards>
     </mat-card>
-          <!--CARDS-->
+    <!--CARDS-->
 </div>
 
 <br>
@@ -34,38 +34,31 @@
 <br>
 
 
-    <div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px">
-        <div fxFlex="120">
-            <app-widget-table [data]="tableData"></app-widget-table>
-        </div>
-
-        <!--TABELA-->
+<div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="120">
+        <app-widget-table [data]="tableData"></app-widget-table>
     </div>
 
-    <mat-divider></mat-divider>
+    <!--TABELA-->
+</div>
 
-     
+<mat-divider></mat-divider>
+
+
+<div class="box">
+
     <div>
-        <mat-card class="example-card">
+        <mat-card class="example-card_two">
+
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                <mat-card-title>Fortaleza</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                </p>
-            </mat-card-content>
+            <img mat-card-image src="assets/img/resort.jpg">
 
-            <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
+            <mat-card-content>
+            </mat-card-content>
 
         </mat-card>
     </div>
@@ -74,23 +67,48 @@
         <mat-card class="example-card_two">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                <mat-card-title>Porto de Galinhas</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
+            <img mat-card-image src="assets/img/salvador.jpg">
             <mat-card-content>
-                <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                </p>
             </mat-card-content>
-
-            <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
-
         </mat-card>
     </div>
+
+
+    <div>
+        <mat-card class="example-card_two">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Maceió</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/maceio.jpg">
+            <mat-card-content>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div>
+        <mat-card class="example-card_two">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Salvador</mat-card-title>
+                <mat-card-subtitle></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/salvador.jpg">
+            
+        </mat-card>
+    </div>
+
+    <mat-divider></mat-divider>
+</div>
+
+<div>
+    <app-widget-grafic [data]="graficChart"></app-widget-grafic>
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>

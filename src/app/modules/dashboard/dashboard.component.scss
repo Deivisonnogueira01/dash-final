@@ -3,18 +3,15 @@
         overflow: hidden;
     }
 }
-
-.example-card {
-    max-width: 400px;
+.box {
+    display: flex;
+    align-items: stretch;
+    background-size: cover;
   }
 
   .example-card_two {
-   align-items: random($limit: 2);
-    margin-right: auto;
-    max-width: 400px;
+    max-width: 500px;
+    max-height: 400px;
   }
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+  

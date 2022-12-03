@@ -24,6 +24,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AreaComponent } from './widgets/area/area.component';
 import { CardsComponent } from './widgets/cards/cards.component';
+import { GraficComponent } from './widgets/grafic/grafic.component';
 import { TableComponent } from './widgets/table/table.component';
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { TableComponent } from './widgets/table/table.component';
     AreaComponent,
     CardsComponent,
     TableComponent,
+    GraficComponent
   ],
   imports: [
     CommonModule,
@@ -60,7 +62,8 @@ import { TableComponent } from './widgets/table/table.component';
     SidebarComponent,
     AreaComponent,
     CardsComponent,
-    TableComponent
+    TableComponent,
+    GraficComponent
   ]
 })
 export class SharedModule { }

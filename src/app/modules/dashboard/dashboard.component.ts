@@ -7,17 +7,19 @@ import { DashboardService } from '../dashboard.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
   bigChart = [];
   cards = [];
- // pieChart = [];
+  graficChart = [];
   tableData = [];
+
   constructor( private DBS: DashboardService) { }
 
   ngOnInit(): void {
     this.bigChart = this.DBS.bigChart();
     this.cards = this.DBS.card();
-   // this.pieChart = this.DBS.pieCharts();
     this.tableData = this.DBS.table();
+    this.graficChart = this.DBS.graficChart();
   }
 
 }
