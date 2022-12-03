@@ -43,4 +43,6 @@ export class AreaComponent implements OnInit {
   }, 300);
   }
 
+ //MAPA
+
 }

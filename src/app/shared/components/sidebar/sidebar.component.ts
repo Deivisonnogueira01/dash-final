@@ -12,5 +12,4 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-   //Telinha que abra na esquerda
 }

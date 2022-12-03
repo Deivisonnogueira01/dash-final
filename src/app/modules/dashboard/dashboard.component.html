@@ -1,14 +1,16 @@
 <div>
-   <app-widget-area [data]="bigChart"></app-widget-area>
+    <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
+    <!--GRAFICO-->
 
 <br>
 <mat-divider></mat-divider>
 <br>
 
+
 <div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
-          
-                     <h1> Regiões </h1>
+
+    <h1> Regiões </h1>
     <mat-card fxFlex="20">
         <app-widgets-cards label="Sul" total="26M" percentage="26" [data]="cards"></app-widgets-cards>
     </mat-card>
@@ -24,16 +26,71 @@
     <mat-card fxFlex="20">
         <app-widgets-cards label="Nordeste" total="17M" percentage="17" [data]="cards"></app-widgets-cards>
     </mat-card>
-
+          <!--CARDS-->
 </div>
 
 <br>
 <mat-divider></mat-divider>
 <br>
 
-<div>
-    <div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px" >
-        <div fxFlex="120"> 
+
+    <div fxLayout="row" fxLatoutAlign="space-between center" fxLayoutGap="20px">
+        <div fxFlex="120">
             <app-widget-table [data]="tableData"></app-widget-table>
-        </div> 
-</div>
+        </div>
+
+        <!--TABELA-->
+    </div>
+
+    <mat-divider></mat-divider>
+
+     
+    <div>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+            </mat-card-actions>
+
+        </mat-card>
+    </div>
+
+    <div>
+        <mat-card class="example-card_two">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+            </mat-card-actions>
+
+        </mat-card>
+    </div>
