@@ -47,3 +47,5 @@ npm i --force
 
 /directory/project
 ng serve
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/86694111/205771304-c7c9c849-dfa0-4d40-858d-79d99030ef95.gif)
