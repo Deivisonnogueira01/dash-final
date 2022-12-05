@@ -35,7 +35,7 @@ export class DashboardService {
   table(){
     return [
       {position: 1, name: 'Salvador', population: 3.000001, estado: 'Bahia'},
-      {position: 2, name: 'Porto de Galinhas', population: 4.00006, estado: 'Pernanbuco'},
+      {position: 2, name: 'Porto de Galinhas', population: 4.00006, estado: 'Pernambuco'},
       {position: 3, name: 'Maceió', population: 1.00007, estado: 'Alagoas'},
       {position: 4, name: 'Aracaju', population: 664.908, estado: 'Sergipe'},
       {position: 5, name: 'Fortaleza', population: 2.687, estado: 'Ceará'},
